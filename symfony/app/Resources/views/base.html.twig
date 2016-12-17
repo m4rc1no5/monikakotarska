@@ -1,13 +1,274 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Zajmujemy się organizowaniem finansowania dla osób fizycznych oraz firm.">
+    <meta name="author" content="Marcin Zaremba">
+
+    <title>Monika Kotarska - Pośrednictwo Finansowe</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/public/template/agency/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/public/template/agency/css/agency.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/public/template/agency/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Google Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-194694-12', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+</head>
+
+<body id="page-top" class="index">
+
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top">Monika Kotarska</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#services">Oferta</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#team">Firma</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#about">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<!-- Header -->
+<header>
+    <div class="container">
+        <div class="intro-text">
+            <div class="intro-lead-in">Pośrednictwo Finansowe</div>
+            <div class="intro-heading">Monika Kotarska</div>
+            <a href="#services" class="page-scroll btn btn-xl">Oferta</a>
+        </div>
+    </div>
+</header>
+
+<!-- Services Section -->
+<section id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Oferta</h2>
+                <h3 class="section-subheading text-muted">Celem naszej firmy jest optymalizacja zobowiązań finansowych.<br><br>
+                    Firma współpracuje z dwunastoma bankami, ośmioma instytucjami poza bankowymi.<br><br>
+                    Zajmujemy się organizowaniem finansowania dla osób fizycznych oraz firm.</h3>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-th-large fa-stack-1x fa-inverse"></i>
+                    </span>
+                <h4 class="service-heading">Konsolidacja</h4>
+                <p class="text-muted">Konsolidacja chwilówek i rozkładanie ich na raty.</p>
+                <p class="text-muted">Konsolidacja kredytów gotówkowych oraz niewygodnych kart kredytowych, które są trudne do spłacenia.</p>
+            </div>
+            <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-money fa-stack-1x fa-inverse"></i>
+                    </span>
+                <h4 class="service-heading">Kredyt</h4>
+                <p class="text-muted">Gotówka na dowolny cel lub hipoteka na wymarzone mieszkanie.</p>
+                <p class="text-muted">Kredyty na oświadczenie, na obroty na rachunku firmowym, na prognozowany przychód.</p>
+                <p class="text-muted">Finansowanie już od pierwszego dnia działalności.</p>
+                <p class="text-muted">Organizowanie finansowania dla osób ze słabym BiK-iem.</p>
+                <p class="text-muted">Kredyty dla osób na ryczałcie, karcie podatkowej oraz KPiR.</p>
+                <p class="text-muted">Kredyty dla Emerytów, Rencistów oraz pracujących na etacie.</p>
+                <p class="text-muted">Kredyty dla osób prowadzących działalność bez US i ZUS.</p>
+            </div>
+            <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+                    </span>
+                <h4 class="service-heading">Ubezpieczenia</h4>
+                <p class="text-muted">Ubezpieczenia posagowe na zabezpieczenie przyszłości dzieci.</p>
+                <p class="text-muted">Gwarantowane emerytury.</p>
+                <p class="text-muted">Otwarte ubezpieczenia grupowe.</p>
+                <p class="text-muted">Fundusze inwestycyjne.</p>
+                <p class="text-muted">Możliwość zakupu ziemi inwestycyjnej.</p>
+                <p class="text-muted">Wiele innych ciekawych rozwiązań finansowych.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Team Section -->
+<section id="team" class="bg-light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Firma</h2>
+                <h3 class="section-subheading text-muted">Celem firmy jest optymalizacja zobowiązań finansowych.</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="team-member">
+
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="team-member">
+                    <img src="/public/template/agency/img/team/mk.jpg" class="img-responsive img-circle" alt="">
+                    <h4>Monika Kotarska</h4>
+                    <p class="text-muted"></p>
+                    <ul class="list-inline social-buttons">
+                        <li><a href="https://www.facebook.com/posrednictwofinansowemonikakotarska/" target="_blank"><i class="fa fa-facebook"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="team-member">
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <p class="large text-muted">Zapewniamy szybką i skuteczną obsługę. Z nami otrzymasz możliwie najlepsze rozwiązanie, które odpowiada Twojej sytuacji i potrzebie.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Kontakt</h2>
+                <h3 class="section-subheading text-muted">telefon: 791 54 94 65, mail: <a href="mailto:monika.kotarska@onet.eu" style="color: #777;">monika.kotarska@onet.eu</a></h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h4>POŚREDNICTWO FINANSOWE MONIKA KOTARSKA</h4>
+                <h5>ul. KAMIENNA 74A, 84-230 RUMIA</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <p class="large text-muted">Zapraszamy serdecznie na bezpłatne
+                    spotkanie z doradcą, z którym
+                    wybierzesz odpowiednią
+                    strategię optymalizacji kosztów kredytowych.
+                </p>
+                <p class="large text-muted">Już po pierwszym spotkaniu doradca
+                    przygotuje indywidualne rozwiązanie.</p>
+                <p class="large text-muted">WYŚLIJ SMS O TREŚCI <b>"UBEZPIECZENIE"</b>,
+                    <b>"KREDYT"</b> LUB <b>"KONSOLIDACJA"</b>
+                    oraz Twoje imię i nazwisko
+                    na numer tel. 791 54 94 65,
+                    doradca oddzwoni w ciągu 24h, aby
+                    umówić się na spotkanie.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <span class="copyright">Copyright &copy; <a href="http://marceen.pl" target="_blank" style="color: black;">marceen.pl</a> 2016</span>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-inline social-buttons">
+                    <li><a href="https://www.facebook.com/posrednictwofinansowemonikakotarska/" target="_blank"><i class="fa fa-facebook"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/public/template/agency/js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/public/template/agency/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="/public/template/agency/js/classie.js"></script>
+<script src="/public/template/agency/js/cbpAnimatedHeader.js"></script>
+
+<!-- Contact Form JavaScript -->
+<script src="/public/template/agency/js/jqBootstrapValidation.js"></script>
+<script src="/public/template/agency/js/contact_me.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/public/template/agency/js/agency.js"></script>
+
+</body>
+
 </html>
