@@ -14,7 +14,7 @@ class SawTestCommand extends ContainerAwareCommand
     {
         $this
             ->setName('saw:test')
-            ->setDescription('...')
+            ->setDescription('Testowe polecenie')
             ->addArgument('argument', InputArgument::OPTIONAL, 'Argument description')
             ->addOption('option', null, InputOption::VALUE_NONE, 'Option description')
         ;

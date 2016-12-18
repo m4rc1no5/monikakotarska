@@ -1,4 +1,10 @@
 services:
-#    marceen_saw.example:
-#        class: Marceen\SAWBundle\Example
-#        arguments: ["@service_id", "plain_value", "%parameter%"]
+  marceen_saw.control.file_reader:
+    class: Marceen\SAWBundle\Control\FileReader
+    arguments: ['@kernel']
+
+  marceen_saw.controller.import_controller:
+    class: Marceen\SAWBundle\Controller\ImportController
+    arguments: ['@marceen_saw.control.file_reader']
+    calls:
+          - [setContainer, ['@service_container']]

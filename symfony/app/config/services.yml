@@ -7,3 +7,10 @@ services:
 #    service_name:
 #        class: AppBundle\Directory\ClassName
 #        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]
+#  marceen_saw.control.file_reader:
+#	class: Marceen\SAWBundle\Control\FileReader
+#	arguments: ['@kernel']
+#
+#  marceen_saw.controller.import_controller:
+#  	class: Marceen\SAWBundle\Controller\ImportController
+#  	arguments: ['@marceen_saw.control.file_reader']

@@ -15,3 +15,15 @@
 /vendor/
 /web/bundles/
 /web/.htaccess
+!saw/backup
+/saw/backup/*
+!/saw/backup/.gitkeep
+!saw/imported
+/saw/imported/*
+!/saw/imported/.gitkeep
+!saw/in_progress
+/saw/in_progress/*
+!/saw/in_progress/.gitkeep
+!saw/to_import
+/saw/to_import/*
+!/saw/to_import/.gitkeep
