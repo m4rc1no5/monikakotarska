@@ -1,10 +1,18 @@
 services:
-  marceen_saw.control.file_reader:
-    class: Marceen\SAWBundle\Control\FileReader
-    arguments: ['@kernel']
-
+#  marceen_saw.control.file_reader:
+#    class: Marceen\SAWBundle\Control\FileReader
+#    arguments: ['@kernel']
+  marceen_saw.control.import.directory_reader:
+    class: Marceen\SAWBundle\Control\Import\DirectoryReader
+    arguments: ['@kernel', '@finder']
+  marceen_saw.control.import.file_reader:
+    class: Marceen\SAWBundle\Control\Import\FileReader
+    arguments: ['@service_container']
+  marceen_saw.control.import_facade:
+    class: Marceen\SAWBundle\Control\ImportFacade
+    arguments: ['@marceen_saw.control.import.directory_reader', '@marceen_saw.control.import.file_reader']
   marceen_saw.controller.import_controller:
     class: Marceen\SAWBundle\Controller\ImportController
-    arguments: ['@marceen_saw.control.file_reader']
+    arguments: ['@marceen_saw.control.import_facade']
     calls:
           - [setContainer, ['@service_container']]

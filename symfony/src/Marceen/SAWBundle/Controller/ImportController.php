@@ -1,7 +1,7 @@
 <?php
 namespace Marceen\SAWBundle\Controller;
 
-use Marceen\SAWBundle\Control\FileReader;
+use Marceen\SAWBundle\Control\ImportFacade;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -14,16 +14,18 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
  */
 class ImportController extends Controller
 {
-    /** @var FileReader */
-    private $fileReader;
+    /**
+     * @var ImportFacade
+     */
+    private $importFacade;
 
     /**
      * ImportController constructor.
-     * @param FileReader $fileReader
+     * @param ImportFacade $importFacade
      */
-    public function __construct(FileReader $fileReader)
+    public function __construct(ImportFacade $importFacade)
     {
-        $this->fileReader = $fileReader;
+        $this->importFacade = $importFacade;
     }
 
 
@@ -35,8 +37,7 @@ class ImportController extends Controller
      */
     public function indexAction()
     {
-        $this->fileReader->updateOffers();
-
+        $this->importFacade->parse();
         return [];
     }
 }
