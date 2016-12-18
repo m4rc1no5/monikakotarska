@@ -1,0 +1,4 @@
+services:
+#    marceen_saw.example:
+#        class: Marceen\SAWBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

@@ -1,3 +1,8 @@
+marceen_saw:
+    resource: "@MarceenSAWBundle/Controller/"
+    type:     annotation
+    prefix:   saw
+
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
